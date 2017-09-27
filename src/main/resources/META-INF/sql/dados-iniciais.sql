@@ -1,0 +1,3 @@
+insert into Usuario (id, nome, email, usuario, senha, admin, datacadastro, situacao) values (1, 'Fulano de Tal', 'fulano@teste.com.br','fulano', '123', 1, NOW(), 'A');
+insert into Usuario (id, nome, email, usuario, senha, admin, datacadastro, situacao) values (2, 'Ciclano', 'ciclano@teste.com.br','ciclano', '123', 0, NOW(), 'I');
+insert into Usuario (id, nome, email, usuario, senha, admin, datacadastro, situacao) values (3, 'Beltrano', 'beltrano@teste.com.br','beltrano', '123', 0, NOW(), 'A');

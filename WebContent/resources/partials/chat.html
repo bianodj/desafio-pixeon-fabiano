@@ -1,0 +1,33 @@
+			<div class="container" style="padding-top: 10px;">
+				<h2>Conversa interna</h2>
+				<br />
+				<form class="form-horizontal" novalidate>
+					<div class="form-group">
+						<div class="col-xs-4">
+							<input class="form-control" type="text" id="username" placeholder="Usuário..." />
+						</div>
+						<div class="col-xs-4">
+							<button class="btn btn-sucess" type="button" id="btnConnect" onclick="connect();">Entrar</button>
+						</div>
+						<div class="col-xs-4"></div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-8">
+							<textarea class="form-control" readonly="true" rows="10" cols="80" id="log"></textarea>
+						</div>
+						<div class="col-xs-4"></div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-4">
+							<input class="form-control" type="text" id="msg" placeholder="Mensssagem..." />
+						</div>
+						<div class="col-xs-2">
+							<button class="btn btn-default" type="button" id="btnSend" onclick="send();">Enviar</button>
+						</div>
+						<div class="col-xs-2">
+							<button class="btn btn-alert" type="button" id="btnDisconnect" onclick="leaveRoom();">Sair</button>
+						</div>
+						<div class="col-xs-4"></div>
+					</div>
+				</form>
+			</div>

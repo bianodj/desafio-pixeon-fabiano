@@ -1,0 +1,29 @@
+<div class="container" style="padding-top:10px;width:95%">
+    <h2> Pessoas cadastradas </h2> <br/>
+    <table style="width:100%"  class="table table-hover">
+        <thead>
+	        <tr>
+	            <th><h3>Nome</h3></th>
+				<th><h3>E-mail</h3></th>
+				<th><h3>Cadastro</h3></th>
+				<th><h3>Ativo/Inativo</h3></th>
+				<th><h3>Tipo</h3></th>
+				<th style="width: 10%;text-align: center"><h3>...</h3></th>
+			</tr>	
+        </thead>
+        <tbody>
+			<tr ng-repeat="usuario in usuarios">
+				<td>{{ usuario.nome }}</td>
+				<td>{{ usuario.email }}</td>
+				<td>{{ usuario.dataCadastro | date:'dd/MM/yyyy  HH:mm:ss' }}</td>
+				<td>{{ usuario.situacao == 'A' ? 'Ativo' : 'Inativo'}}</td>
+				<td>{{ usuario.admin == true ? 'Administrador' : 'Cliente'}}</td>
+				<td style="text-align: center">
+					<span ng-click="editUsuario(usuario)" class="glyphicon glyphicon-pencil"></span>
+					<span> | </span>
+					<span ng-click="deleteUsuario(usuario)" class="glyphicon glyphicon-remove-circle"></span>
+				</td>
+			</tr>
+        </tbody>
+	</table>
+</div>
